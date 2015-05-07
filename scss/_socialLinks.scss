@@ -1,0 +1,24 @@
+// Social Icon links
+// Scrolling makes these appear and hide
+// scroll is base css that is hidden
+// stuckTwo is programed with Javascript to make appear on scroll
+
+.scroll {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    background: transparent;
+    img {
+        width: 3em;
+        
+    }
+}
+
+.stuckTwo {
+    display: inline-block;
+    margin-top: 4.4em;
+    li  {
+        display: inline-block;
+    }
+    
+}

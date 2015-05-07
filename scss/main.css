@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* general styles */
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: .90em;
+  top: 0;
+  line-height: 1.2em; }
+  body a {
+    color: white;
+    text-decoration: none; }
+  body h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .2em; }
+
+.jumbotron {
+  padding: 0;
+  margin-bottom: 0; }
+  .jumbotron .container {
+    color: white; }
+
+#intro {
+  background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
+  height: 800px;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(80, 113, 89, 0.9);
+  padding-top: 20em; }
+  #intro h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: right; }
+  #intro h3 {
+    text-align: right; }
+
+#blank {
+  padding: 2em;
+  border-top: 1px solid black; }
+  #blank p {
+    font-size: .75em; }
+
+#professionalBackground {
+  background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
+  height: 50%;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 0 50px rgba(0, 0, 0, 0.8);
+  background-size: cover; }
+  #professionalBackground p {
+    color: rgba(0, 0, 0, 0.6); }
+  #professionalBackground p:first-of-type {
+    padding-bottom: 1em; }
+  #professionalBackground h1 {
+    font-size: 1.7em;
+    font-weight: bold; }
+  #professionalBackground h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: .5em; }
+  #professionalBackground h3 {
+    font-size: 1.3em;
+    font-weight: bold; }
+  #professionalBackground h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: .5em; }
+  #professionalBackground img {
+    height: 20em;
+    width: 30em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); }
+  #professionalBackground .profile {
+    margin: 6em auto 6em auto; }
+
+.services {
+  margin: 6em auto; }
+  .services p {
+    color: rgba(0, 0, 0, 0.6); }
+  .services h3 {
+    font-size: 2em;
+    font-weight: bold; }
+
+.status {
+  margin: 0 auto 1em auto;
+  box-shadow: 1px 5px 9px black; }
+  .status .container {
+    margin: 2em auto; }
+
+.skillSet {
+  margin: 5em auto 5em auto;
+  background-color: rgba(209, 209, 209, 0.3); }
+  .skillSet h4 {
+    padding-bottom: 1em; }
+
+.progress-bar {
+  border-right: solid 6px; }
+
+.progress {
+  background: #b3b3b3;
+  border: 8px solid transparent;
+  border-radius: 4px;
+  height: 20px;
+  background-color: transparent; }
+
+.progress-bar-custom {
+  background: black; }
+
+.progress-bar-custom1 {
+  background: #9e9e9e; }
+
+.shadow {
+  box-shadow: 2px 5px 10px 12px black; }
+
+#bottomProfilePicture {
+  background: url("../img/smallBack.jpg") no-repeat fixed;
+  height: 10%;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+  background-size: 1925px;
+  padding: 6em 0; }
+
+.well {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  margin: 3.3em 0 0 0; }
+
+.help-block {
+  color: red; }
+
+.myContact {
+  background-color: rgba(0, 36, 36, 0.3);
+  color: white;
+  margin-top: 3em;
+  border-radius: 4px;
+  width: 80%;
+  line-height: 2em;
+  box-shadow: 22px 22px 22px black; }
+  .myContact h1 {
+    font-size: 3em; }
+
+/* -----------MY STATUS BUTTON _______________*/
+.btn {
+  -webkit-box-shadow: 0px 10px 15px -4px #172611;
+  box-shadow: 0px 10px 15px -4px #172611;
+  background: -moz-linear-gradient(top, #000000 5%, #666666 100%);
+  background: linear-gradient(to bottom, #000000 5%, #666666 100%);
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #263d1b;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #172e07; }
+
+.btn:hover {
+  background: -moz-linear-gradient(top, #666666 5%, #000000 100%);
+  background: linear-gradient(to bottom, #666666 5%, #000000 100%);
+  background-color: #666666; }
+
+.btn:active {
+  position: relative;
+  top: 1px; }
+
+/* Navbar sectio*/
+.navbar {
+  background: rgba(80, 113, 89, 0.3);
+  min-height: 0; }
+
+.navbar-default .navbar-brand {
+  color: white; }
+
+.scroller {
+  margin: 2em 0 0 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid white; }
+  .scroller a {
+    color: white;
+    font-size: .75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 5em; }
+
+.stuck {
+  background: black;
+  margin: 0; }
+  .stuck #nav-toggle-button {
+    background-color: black; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+
+.nav > li > a:hover {
+  text-decoration: none;
+  border-bottom-width: .25em;
+  border-bottom-style: solid;
+  font-size: 0.70em;
+  line-height: 0.90em;
+  background-color: rgba(80, 113, 89, 0.2); }
+
+.nav > li > a {
+  padding: 20px 15px; }
+
+#navbar-toggle {
+  background-color: #0f0f0f;
+  color: black; }
+
+/* bottom navigator */
+.bottomNav {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  margin: 0;
+  padding: 1.2em 0 0 0; }
+  .bottomNav a {
+    color: white; }
+  .bottomNav a:hover {
+    text-decoration: none; }
+
+.scroll {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background: transparent; }
+  .scroll img {
+    width: 3em; }
+
+.stuckTwo {
+  display: inline-block;
+  margin-top: 4.4em; }
+  .stuckTwo li {
+    display: inline-block; }
+
+/* */
+@media (min-width: 150px) and (max-width: 991px) {
+  #bottomProfilePicture {
+    background: url("../img/smallBack.jpg") no-repeat fixed;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: 2500px;
+    padding: 2em 0; }
+
+  #professionalBackground img {
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2em; } }
+@media (min-width: 150px) and (max-width: 767px) {
+  .pull-right {
+    float: none !important; } }
+@media (min-width: 150px) and (max-width: 360px) {
+  #intro {
+    background: url("../img/smallBack.jpg") no-repeat fixed 50% 0px/cover transparent;
+    height: 800px;
+    margin: 0px auto;
+    width: 100%;
+    position: relative; }
+    #intro h1, #intro h3 {
+      text-align: center; }
+
+  #about {
+    background: none;
+    padding: 0; }
+
+  .status {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .status p {
+      margin-top: 1em; }
+
+  #information2 {
+    margin: 2em 0; }
+
+  #professionalBackground .container {
+    margin: 1em auto;
+    padding: 2em 0 0; }
+
+  .services {
+    margin: 3em auto; }
+    .services hr {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .services h4 {
+      margin-top: 1em; }
+
+  .myContact {
+    margin: 0 auto;
+    line-height: 1.2em; }
+    .myContact .contact {
+      padding: 0; }
+    .myContact .well {
+      margin: 0;
+      padding: .75em; }
+
+  #blank {
+    text-align: center; } }
+/* 360x640 */
+@media (min-width: 360px) and (max-width: 640px) {
+  #intro {
+    background: url("../img/smallBack.jpg") no-repeat fixed 50% 0px/cover transparent;
+    height: 800px;
+    margin: 0px auto;
+    width: 100%;
+    position: relative; }
+    #intro h1, #intro h3 {
+      text-align: center; }
+
+  #about {
+    background-size: 1850px; } }
+@media (min-width: 640px) and (max-width: 750px) {
+  #intro h1, #intro h3 {
+    text-align: center; } }
+/* 640x1200 */
+@media (min-width: 640px) and (max-width: 1200px) {
+  #about {
+    background-size: 1800px; } }
+/* 1200x 1600 */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  #bottomProfilePicture {
+    background: url("../img/smallBack.jpg") no-repeat fixed;
+    height: 5%;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    background-size: 1700px; } }
+@media (min-width: 1200px) and (max-width: 1600px) {
+  #about {
+    background-size: 1700px; } }
+@media (min-width: 1600px) and (max-width: 3200px) {
+  #intro {
+    background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
+    height: 900px;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    background-size: cover; } }
+
+/*# sourceMappingURL=main.css.map */

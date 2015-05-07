@@ -1,0 +1,225 @@
+/* general styles */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: .90em;
+    top: 0;
+    line-height: 1.2em;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: .2em;
+    }
+}
+
+.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+    .container {
+        // position: relative;
+        color: white;
+    }
+}
+
+// Top Background picture plus Hello, Im -----------
+#intro {
+    background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
+    height: 800px;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    color: $fontBc;
+    text-shadow: 3px 3px 3px hsla(136, 17%, 38%, .9);
+    padding-top: 20em;
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: right;
+    }
+    h3 {
+        text-align: right;
+    }
+}
+
+// Email Phone Location
+#blank {
+    padding: 2em;
+    border-top: 1px solid black;
+    p {
+        font-size: .75em;
+    }
+}
+
+// Professional Profile section
+#professionalBackground {
+    background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
+    height: 50%;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0 50px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    p {
+        color: $pFont;
+    }
+    p:first-of-type {
+        padding-bottom: 1em;
+    }
+    h1 {
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: .5em;
+    }
+    h3 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: .5em;
+    }
+    img {
+        height: 20em;
+        width: 30em;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+    .profile {
+        margin: 6em auto 6em auto;
+    }
+}
+
+// What I Can Do Section
+// SERVICES
+.services {
+    margin: 6em auto;
+    p {
+        color: $pFont;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+// My Status Available for FREELANCE
+.status {
+    margin: 0 auto 1em auto;
+    // background-color: hsla(180, 100%, 7%, .2);
+    box-shadow: 1px 5px 9px black;
+    .container {
+        margin: 2em auto;
+    }
+}
+
+//SKILLSET Progress Bars
+.skillSet {
+    margin: 5em auto 5em auto;
+    background-color: hsla(195, 0%, 82%, .3);
+    h4 {
+        padding-bottom: 1em;
+    }
+}
+
+// Progress Bar Crap------------------
+.progress-bar {
+    border-right: solid 6px;
+}
+
+.progress {
+    background: rgba(179, 179, 179, 1);
+    border: 8px solid transparent;
+    border-radius: 4px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.progress-bar-custom {
+    background: rgba(0, 0, 0, 1);
+}
+
+.progress-bar-custom1 {
+    background: rgba(158, 158, 158, 1);
+}
+
+//shadow on the top of bottomProfilePicture
+.shadow {
+    box-shadow: 2px 5px 10px 12px black;
+}
+
+// Bottom Background Picture
+#bottomProfilePicture {
+    background: url("../img/smallBack.jpg") no-repeat fixed;
+    height: 10%;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    background-size: 1925px;
+    padding: 6em 0;
+}
+
+// New Form-----------------------------------------
+.well {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    margin: 3.3em 0 0 0;
+}
+
+.help-block {
+    color: red;
+}
+
+.myContact {
+    background-color: hsla(180, 100%, 7%, .3);
+    color: white;
+    margin-top: 3em;
+    border-radius: 4px;
+    width: 80%;
+    line-height: 2em;
+    box-shadow: 22px 22px 22px black;
+    h1 {
+        font-size: 3em;
+    }
+}
+/* -----------MY STATUS BUTTON _______________*/
+
+.btn {
+    -webkit-box-shadow: 0px 10px 15px -4px #172611;
+    box-shadow: 0px 10px 15px -4px #172611;
+    background: -moz-linear-gradient(top, #000000 5%, #666666 100%);
+    background: linear-gradient(to bottom, #000000 5%, #666666 100%);
+    background-color: #000000;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #263d1b;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #172e07;
+}
+
+.btn:hover {
+    background: -moz-linear-gradient(top, #666666 5%, #000000 100%);
+    background: linear-gradient(to bottom, #666666 5%, #000000 100%);
+    background-color: #666666;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
