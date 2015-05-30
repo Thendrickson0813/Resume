@@ -2,7 +2,7 @@
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: .90em;
+    font-size: 1.1em;
     top: 0;
     line-height: 1.2em;
     a {
@@ -16,53 +16,41 @@ body {
     }
 }
 
-.jumbotron {
-    padding: 0;
-    margin-bottom: 0;
-    .container {
-        // position: relative;
-        color: white;
-    }
-}
-
-// Top Background picture plus Hello, Im -----------
-#intro {
-    background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
-    height: 800px;
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    color: $fontBc;
-    text-shadow: 3px 3px 3px hsla(136, 17%, 38%, .9);
-    padding-top: 20em;
-    h1 {
-        font-size: 3em;
-        font-weight: bold;
-        text-align: right;
-    }
-    h3 {
-        text-align: right;
-    }
+// -------Header -----------
+.intro {
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 4em;
+    margin-top: 3em;
+    line-height: 1.5;
+    text-align: center;
 }
 
 // Email Phone Location
 #blank {
-    padding: 2em;
-    border-top: 1px solid black;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
     p {
         font-size: .75em;
+    }
+    img {
+        width: 60px;
+        display: inline-block;
+        padding: 1em .8em;
+
     }
 }
 
 // Professional Profile section
 #professionalBackground {
     background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
-    height: 50%;
     margin: 0px auto;
     width: 100%;
     position: relative;
-    box-shadow: 0px 0 50px rgba(0, 0, 0, 0.8);
     background-size: cover;
     p {
         color: $pFont;
@@ -115,56 +103,18 @@ body {
 .status {
     margin: 0 auto 1em auto;
     // background-color: hsla(180, 100%, 7%, .2);
-    box-shadow: 1px 5px 9px black;
     .container {
         margin: 2em auto;
     }
 }
 
-//SKILLSET Progress Bars
-.skillSet {
-    margin: 5em auto 5em auto;
-    background-color: hsla(195, 0%, 82%, .3);
-    h4 {
-        padding-bottom: 1em;
-    }
-}
 
-// Progress Bar Crap------------------
-.progress-bar {
-    border-right: solid 6px;
-}
-
-.progress {
-    background: rgba(179, 179, 179, 1);
-    border: 8px solid transparent;
-    border-radius: 4px;
-    height: 20px;
-    background-color: transparent;
-}
-
-.progress-bar-custom {
-    background: rgba(0, 0, 0, 1);
-}
-
-.progress-bar-custom1 {
-    background: rgba(158, 158, 158, 1);
-}
-
-//shadow on the top of bottomProfilePicture
-.shadow {
-    box-shadow: 2px 5px 10px 12px black;
-}
 
 // Bottom Background Picture
 #bottomProfilePicture {
-    background: url("../img/smallBack.jpg") no-repeat fixed;
-    height: 10%;
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    background-size: 1925px;
-    padding: 6em 0;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 6em 0 0 0;
+    z-index: 9999;
 }
 
 // New Form-----------------------------------------
@@ -172,7 +122,6 @@ body {
     background-image: none;
     background-color: transparent;
     border: none;
-    margin: 3.3em 0 0 0;
 }
 
 .help-block {
@@ -180,16 +129,16 @@ body {
 }
 
 .myContact {
-    background-color: hsla(180, 100%, 7%, .3);
+    background-color: rgba(0, 0, 0, .1);
     color: white;
-    margin-top: 3em;
-    border-radius: 4px;
-    width: 80%;
     line-height: 2em;
-    box-shadow: 22px 22px 22px black;
     h1 {
         font-size: 3em;
     }
+}
+input#email.form-control, textarea#message.form-control, input#name.form-control {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
 }
 /* -----------MY STATUS BUTTON _______________*/
 
@@ -222,4 +171,12 @@ body {
 .btn:active {
     position: relative;
     top: 1px;
+}
+.social-links   {
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0 auto;
+    padding: 1.5em 0;
+    img {
+        padding: 0 1em;
+    }
 }

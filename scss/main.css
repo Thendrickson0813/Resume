@@ -50,7 +50,7 @@ table {
 /* general styles */
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: .90em;
+  font-size: 1.1em;
   top: 0;
   line-height: 1.2em; }
   body a {
@@ -61,42 +61,33 @@ body {
     font-weight: bold;
     margin-bottom: .2em; }
 
-.jumbotron {
-  padding: 0;
-  margin-bottom: 0; }
-  .jumbotron .container {
-    color: white; }
-
-#intro {
-  background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
-  height: 800px;
-  margin: 0px auto;
-  width: 100%;
-  position: relative;
-  background-size: cover;
+.intro {
+  font-family: 'Lora', serif;
   color: white;
-  text-shadow: 3px 3px 3px rgba(80, 113, 89, 0.9);
-  padding-top: 20em; }
-  #intro h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: right; }
-  #intro h3 {
-    text-align: right; }
+  font-size: 4em;
+  margin-top: 3em;
+  line-height: 1.5;
+  text-align: center; }
 
 #blank {
-  padding: 2em;
-  border-top: 1px solid black; }
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: block; }
   #blank p {
     font-size: .75em; }
+  #blank img {
+    width: 60px;
+    display: inline-block;
+    padding: 1em .8em; }
 
 #professionalBackground {
   background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
-  height: 50%;
   margin: 0px auto;
   width: 100%;
   position: relative;
-  box-shadow: 0px 0 50px rgba(0, 0, 0, 0.8);
   background-size: cover; }
   #professionalBackground p {
     color: rgba(0, 0, 0, 0.6); }
@@ -132,64 +123,33 @@ body {
     font-weight: bold; }
 
 .status {
-  margin: 0 auto 1em auto;
-  box-shadow: 1px 5px 9px black; }
+  margin: 0 auto 1em auto; }
   .status .container {
     margin: 2em auto; }
 
-.skillSet {
-  margin: 5em auto 5em auto;
-  background-color: rgba(209, 209, 209, 0.3); }
-  .skillSet h4 {
-    padding-bottom: 1em; }
-
-.progress-bar {
-  border-right: solid 6px; }
-
-.progress {
-  background: #b3b3b3;
-  border: 8px solid transparent;
-  border-radius: 4px;
-  height: 20px;
-  background-color: transparent; }
-
-.progress-bar-custom {
-  background: black; }
-
-.progress-bar-custom1 {
-  background: #9e9e9e; }
-
-.shadow {
-  box-shadow: 2px 5px 10px 12px black; }
-
 #bottomProfilePicture {
-  background: url("../img/smallBack.jpg") no-repeat fixed;
-  height: 10%;
-  margin: 0px auto;
-  width: 100%;
-  position: relative;
-  background-size: 1925px;
-  padding: 6em 0; }
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 6em 0 0 0;
+  z-index: 9999; }
 
 .well {
   background-image: none;
   background-color: transparent;
-  border: none;
-  margin: 3.3em 0 0 0; }
+  border: none; }
 
 .help-block {
   color: red; }
 
 .myContact {
-  background-color: rgba(0, 36, 36, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
-  margin-top: 3em;
-  border-radius: 4px;
-  width: 80%;
-  line-height: 2em;
-  box-shadow: 22px 22px 22px black; }
+  line-height: 2em; }
   .myContact h1 {
     font-size: 3em; }
+
+input#email.form-control, textarea#message.form-control, input#name.form-control {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black; }
 
 /* -----------MY STATUS BUTTON _______________*/
 .btn {
@@ -219,6 +179,13 @@ body {
 .btn:active {
   position: relative;
   top: 1px; }
+
+.social-links {
+  background-color: black;
+  margin: 0 auto;
+  padding: 1.5em 0; }
+  .social-links img {
+    padding: 0 1em; }
 
 /* Navbar sectio*/
 .navbar {
@@ -274,15 +241,19 @@ body {
 /* bottom navigator */
 .bottomNav {
   background-color: black;
-  color: white;
   border-radius: 0;
   margin: 0;
-  padding: 1.2em 0 0 0; }
-  .bottomNav a {
-    color: white; }
-  .bottomNav a:hover {
-    text-decoration: none; }
+  padding: .5em 0;
+  list-style: none;
+  color: #b0b0b0;
+  font-size: .6em; }
 
+@media (min-width: 150px) and (max-width: 360px) {
+  #bottomProfilePicture {
+    padding: 0; }
+
+  .myContact {
+    line-height: 1em; } }
 .scroll {
   position: fixed;
   display: none;
@@ -297,34 +268,130 @@ body {
   .stuckTwo li {
     display: inline-block; }
 
+.scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer; }
+  .scrollTopBtn img {
+    width: 2em; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+html,
+body {
+  height: 100%; }
+
+div.second {
+  width: 100%; }
+
+div.first {
+  width: 100%;
+  height: 100%; }
+
+div.first {
+  background-image: url(../img/blur.jpg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover !important;
+  text-align: center;
+  overflow: hidden; }
+
+div.second {
+  background: none repeat scroll 0% 0% transparent;
+  width: 100%; }
+
+.skillSet {
+  background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  padding: 0;
+  color: white;
+  z-index: -1; }
+  .skillSet h4 {
+    margin: 2em 0; }
+
+.shade {
+  background: black 5% 0 no-repeat fixed;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+  height: 27.55em;
+  width: 50%;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  opacity: .3; }
+
+.shade-margin {
+  padding: 2em 0 4em 0; }
+
+.progress-bar {
+  border-right: solid 6px #008022; }
+
+.progress {
+  border: 8px solid transparent;
+  border-radius: 4px;
+  height: 20px;
+  background-color: transparent; }
+
+.progress-bar-custom {
+  background-color: #2500e0; }
+
+.progress-bar-custom1 {
+  background-color: #ff0a2b; }
+
+@media (max-width: 767px) {
+  .shade {
+    height: 41.5em;
+    opacity: .1; }
+
+  .skillSet {
+    background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    padding: 0;
+    color: white;
+    z-index: -1; }
+    .skillSet h4 {
+      margin: 2em 0; } }
 /* */
 @media (min-width: 150px) and (max-width: 991px) {
-  #bottomProfilePicture {
-    background: url("../img/smallBack.jpg") no-repeat fixed;
-    margin: 0px auto;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-size: 2500px;
-    padding: 2em 0; }
-
   #professionalBackground img {
     width: 100%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }
+
+  canvas {
+    background-image: url(../img/smallColorBack.jpg);
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    display: block; } }
 @media (min-width: 150px) and (max-width: 767px) {
   .pull-right {
     float: none !important; } }
 @media (min-width: 150px) and (max-width: 360px) {
-  #intro {
-    background: url("../img/smallBack.jpg") no-repeat fixed 50% 0px/cover transparent;
-    height: 800px;
-    margin: 0px auto;
-    width: 100%;
-    position: relative; }
-    #intro h1, #intro h3 {
-      text-align: center; }
-
   #about {
     background: none;
     padding: 0; }
@@ -335,9 +402,6 @@ body {
     text-align: center; }
     .status p {
       margin-top: 1em; }
-
-  #information2 {
-    margin: 2em 0; }
 
   #professionalBackground .container {
     margin: 1em auto;
@@ -351,28 +415,10 @@ body {
     .services h4 {
       margin-top: 1em; }
 
-  .myContact {
-    margin: 0 auto;
-    line-height: 1.2em; }
-    .myContact .contact {
-      padding: 0; }
-    .myContact .well {
-      margin: 0;
-      padding: .75em; }
-
   #blank {
     text-align: center; } }
 /* 360x640 */
 @media (min-width: 360px) and (max-width: 640px) {
-  #intro {
-    background: url("../img/smallBack.jpg") no-repeat fixed 50% 0px/cover transparent;
-    height: 800px;
-    margin: 0px auto;
-    width: 100%;
-    position: relative; }
-    #intro h1, #intro h3 {
-      text-align: center; }
-
   #about {
     background-size: 1850px; } }
 @media (min-width: 640px) and (max-width: 750px) {
@@ -384,24 +430,7 @@ body {
     background-size: 1800px; } }
 /* 1200x 1600 */
 @media (min-width: 1200px) and (max-width: 1600px) {
-  #bottomProfilePicture {
-    background: url("../img/smallBack.jpg") no-repeat fixed;
-    height: 5%;
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    background-size: 1700px; } }
-@media (min-width: 1200px) and (max-width: 1600px) {
   #about {
     background-size: 1700px; } }
-@media (min-width: 1600px) and (max-width: 3200px) {
-  #intro {
-    background: url("../img/colorBackground.jpg") 50% 0 no-repeat fixed;
-    height: 900px;
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    background-size: cover; } }
 
 /*# sourceMappingURL=main.css.map */

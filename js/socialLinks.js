@@ -16,4 +16,3 @@
             $('.scroll').removeClass('stuckTwo');
         }
     });
-// });

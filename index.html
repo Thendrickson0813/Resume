@@ -8,6 +8,7 @@
     <meta name="Front-end Developer Tampa" content="Freelance Web Designer, Tampa Florida, Contact me for more information about building your interactive website.">
     <title>Timothy Hendrickson, Front-End Developer, Tampa Florida</title>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="scss/main.css">
@@ -46,13 +47,13 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Home</a>
+                    <li><a data-scroll href="#home">Home</a>
                     </li>
-                    <li><a href="#about">About</a>
+                    <li><a data-scroll href="#about">About</a>
                     </li>
-                    <li><a href="#services">Services</a>
+                    <li><a data-scroll href="#services">Services</a>
                     </li>
-                    <li><a href="#contact">Contact</a>
+                    <li><a data-scroll href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,45 +65,35 @@
     <!-- Section 1 -->
     <div id="home" class="container-fluid">
         <ul class="scroll">
-            <li><img alt="background picture" src="img/linkedin.png/"></li>
-            <li><img alt="background picture" src="img/google.png/"></li>
         </ul>
     </div>
-    <div class="jumbotron">
-        <section id="intro" data-speed="4" data-type="background">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-12">
-                        <h1>Hello, I'm Timothy Hendrickson</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-12">
-                        <h3>FRONT-END DEVELOPER</h3></div>
-                </div>
+    <div class="first container">
+        <div class="row intro">
+            <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-8 col-lg-8 col-xl-4">
+                <p>Front-End Developer</p>
             </div>
-        </section>
+            <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-4"></div>
+        </div>
     </div>
-    <!-- /first section Contact-->
-    <!-- Section 2 -->
-    <section id="blank">
-        <div id="about" class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <h4>Email Address:</h4>
-                    <p>Thendrickson0813@gmail.com</p>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <h4>Phone:</h4>
-                    <p>813-438-2668</p>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <h4>Location:</h4>
-                    <p>New Port Richey, FL 34655</p>
+    <div class="second">
+        <div id="blank">
+            <div class="container"><span id="about"></span>
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                                <a href="https://www.linkedin.com/in/tmhendrickson"><img alt="background picture" src="img/linkedin-48.png/"></a>
+                                <a href="https://plus.google.com/b/105527195720507547192/+TimothyhendricksonDeveloper/posts/p/pub"><img alt="background picture" src="img/google5-48.png/"></a>
+                                <a href="https://github.com/Thendrickson0813"><img aalt="background picture" src="img/github-48.png/"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="second"></div>
     <section id="professionalBackground" data-speed="8" data-type="background">
         <div class="container-fluid">
             <!-- Image, Skillset, and Professional profile Below-->
@@ -190,84 +181,89 @@
             </div>
         </div>
     </div>
-    <div class="container skillSet">
-        <div id="information2">
+    <div class="shade"></div>
+    <div class="container-fluid skillSet">
+        <div class="container shade-margin">
             <div class="row">
-                <div class="col-xs-11 col-sm-4 col-md-5">
+                <div class="col-xs-12 col-sm-4 col-md-5 text-center">
                     <h4>SKILLSET</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-10 col-sm-6 col-md-5">
+                <!-- Left Side Progress Bar -->
+                <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <p>UX Design:</p>
                     <!-- Adding 1 to progress-bar-custom will make it a grey background -->
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>HTML:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>CSS3:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>SASS:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
-                    <!-- </div>
-                            </div> -->
                 </div>
-                <div class="col-xs-10 col-sm-6 col-md-5 pull-right">
+                <!-- End Left Progress Bar -->
+                <!-- Right Progress Bar -->
+                <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <p>Javascript:</p>
                     <!-- Adding 1 to progress-bar-custom will make it a grey background -->
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="0" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>Jquery:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>AngularJs:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                     <p>Ajax:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
-                        <div class="progress-bar progress-bar-custom1" role="progressbar" aria-valuenow="6" aria-valuemin="2" aria-valuemax="100" style="width: 25%;"></div><span class="sr-only"></span>
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
+                        <div class="progress-bar progress-bar-custom1" role="progressbar" style="width: 25%;"></div>
                     </div>
                 </div>
+                <!-- End Right Progress Bar -->
             </div>
+            <!-- End Row -->
         </div>
+        <!-- End Container -->
     </div>
-    <div class="shadow"></div>
+    <!-- End Container Fluid -->
     <!-- fourth section - Information -->
-    <section id="bottomProfilePicture" data-speed="4" data-type="background">
+    <section id="bottomProfilePicture">
         <div id="contact" class="information">
             <div id="informationButton" class="container myContact">
                 <div class="row">
@@ -311,20 +307,31 @@
                                 <br />
                             </form>
                         </div>
-                        <br/>
-                        <br/>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="container-fluid social-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <a href="https://www.linkedin.com/in/tmhendrickson"><img alt="background picture" src="img/linkedin-48.png/"></a>
+                    <a href="https://plus.google.com/b/105527195720507547192/+TimothyhendricksonDeveloper/posts/p/pub"><img alt="background picture" src="img/google5-48.png/"></a>
+                    <a href="https://github.com/Thendrickson0813"><img aalt="background picture" src="img/github-48.png/"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scrollTopBtn" id="scrollTopBtn"><img src="img/up.png" alt="Scroll Icon" /></div>
     <footer>
-        <div class="navbar navbar-inverse bottomNav">
-            <div class="container-fluid myNav">
-                <ul class="pull-left">
-                    <li><a href="#">2015 Timothy Hendrickson, All Rights Reserved.</a>
-                    </li>
-                </ul>
+        <div class="navbar-inverse bottomNav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                        <li>Timothy Hendrickson &copy; Copyright 2015, All Rights Reserved.</li>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -332,10 +339,16 @@
     <!-- attach JavaScripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="./js/jqBootstrapValidation.js"></script>
-    <script src="./js/contact_me.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/canvas.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
     <script type="text/javascript" src="js/socialLinks.js"></script>
+    <script>
+    smoothScroll.init();
+    </script>
 </body>
 
 </html>
