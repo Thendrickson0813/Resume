@@ -27,19 +27,6 @@
         background: none;
         padding: 0;
     }
-    .status {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        p {
-            margin-top: 1em;
-        }
-    }
-    
-    #professionalBackground .container {
-        margin: 1em auto;
-        padding: 2em 0 0;
-    }
     .services {
         margin: 3em auto;
         hr {
@@ -50,7 +37,6 @@
             margin-top: 1em;
         }
     }
-    
     #blank {
         text-align: center;
     }
@@ -88,7 +74,6 @@
 }
 /* 1200x 1600 */
 
-@media (min-width: 1200px) and (max-width: 1600px) {}
 
 @media (min-width: 1200px) and (max-width: 1600px) {
     #about {

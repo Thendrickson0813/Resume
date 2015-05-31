@@ -49,7 +49,7 @@ table {
 
 /* general styles */
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Cantarell','Trebuchet MS', Helvetica, sans-serif;
   font-size: 1.1em;
   top: 0;
   line-height: 1.2em; }
@@ -62,7 +62,6 @@ body {
     margin-bottom: .2em; }
 
 .intro {
-  font-family: 'Lora', serif;
   color: white;
   font-size: 4em;
   margin-top: 3em;
@@ -122,15 +121,10 @@ body {
     font-size: 2em;
     font-weight: bold; }
 
-.status {
-  margin: 0 auto 1em auto; }
-  .status .container {
-    margin: 2em auto; }
-
 #bottomProfilePicture {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 6em 0 0 0;
-  z-index: 9999; }
+  z-index: 3; }
 
 .well {
   background-image: none;
@@ -294,7 +288,7 @@ div.first {
   height: 100%; }
 
 div.first {
-  background-image: url(../img/blur.jpg);
+  background-image: url(../img/colorBackground.jpg);
   background-color: black;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -341,7 +335,8 @@ div.second {
   opacity: .3; }
 
 .shade-margin {
-  padding: 2em 0 4em 0; }
+  padding-top: 2em;
+  padding-bottom: 4em; }
 
 .progress-bar {
   border-right: solid 6px #008022; }
@@ -374,6 +369,19 @@ div.second {
     z-index: -1; }
     .skillSet h4 {
       margin: 2em 0; } }
+.status {
+  margin: 0 auto;
+  padding: 4em 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
+  .status h4 {
+    font-size: 2em; }
+
+@media (max-width: 767px) {
+  .status h4 {
+    font-size: 1.7em; }
+  .status p {
+    margin-top: 1em; } }
 /* */
 @media (min-width: 150px) and (max-width: 991px) {
   #professionalBackground img {
@@ -395,17 +403,6 @@ div.second {
   #about {
     background: none;
     padding: 0; }
-
-  .status {
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    .status p {
-      margin-top: 1em; }
-
-  #professionalBackground .container {
-    margin: 1em auto;
-    padding: 2em 0 0; }
 
   .services {
     margin: 3em auto; }
