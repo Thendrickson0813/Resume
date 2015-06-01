@@ -1,0 +1,72 @@
+// What I Can Do Section
+// SERVICES
+.services {
+    margin: 13em auto 8em auto;
+    p {
+        color: $pFont;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    h4 {
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+}
+
+//
+//
+//
+// Media Queries
+@media(max-width:767px) {
+    .services {
+        margin-top: 0;
+        h4 {
+            padding: 1em 0 .2em 0;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .services {
+        margin-top: 0;
+        h4 {
+            padding: 1em 0 .2em 0;
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .services {
+        margin: 1em auto 8em auto;
+        p {
+            color: $pFont;
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        h4 {
+            font-weight: bold;
+            padding-bottom: 1em;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .services {
+        margin: 13em auto 8em auto;
+        p {
+            color: $pFont;
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        h4 {
+            font-weight: bold;
+            padding-bottom: 1em;
+        }
+    }
+}

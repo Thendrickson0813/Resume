@@ -1,7 +1,7 @@
 /* general styles */
 
 body {
-    font-family: 'Cantarell','Trebuchet MS', Helvetica, sans-serif;
+    font-family: 'Cantarell', 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 1.1em;
     top: 0;
     line-height: 1.2em;
@@ -34,59 +34,10 @@ body {
         width: 60px;
         display: inline-block;
         padding: 1em .8em;
-
     }
 }
 
 
-
-// What I Can Do Section
-// SERVICES
-.services {
-    margin: 6em auto;
-    p {
-        color: $pFont;
-    }
-    h3 {
-        font-size: 2em;
-        font-weight: bold;
-    }
-}
-
-
-
-
-
-// Bottom Background Picture
-#bottomProfilePicture {
-    background-color: rgba(0, 0, 0, .9);
-    padding: 6em 0 0 0;
-    z-index: 3;
-}
-
-// New Form-----------------------------------------
-.well {
-    background-image: none;
-    background-color: transparent;
-    border: none;
-}
-
-.help-block {
-    color: red;
-}
-
-.myContact {
-    background-color: rgba(0, 0, 0, .1);
-    color: white;
-    line-height: 2em;
-    h1 {
-        font-size: 3em;
-    }
-}
-input#email.form-control, textarea#message.form-control, input#name.form-control {
-    background-color: rgba(255, 255, 255, .8);
-    color: black;
-}
 /* -----------MY STATUS BUTTON _______________*/
 
 .btn {
@@ -119,7 +70,8 @@ input#email.form-control, textarea#message.form-control, input#name.form-control
     position: relative;
     top: 1px;
 }
-.social-links   {
+
+.social-links {
     background-color: rgba(0, 0, 0, 1);
     margin: 0 auto;
     padding: 1.5em 0;

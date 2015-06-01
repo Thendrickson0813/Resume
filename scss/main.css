@@ -49,7 +49,7 @@ table {
 
 /* general styles */
 body {
-  font-family: 'Cantarell','Trebuchet MS', Helvetica, sans-serif;
+  font-family: 'Cantarell', 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 1.1em;
   top: 0;
   line-height: 1.2em; }
@@ -76,38 +76,6 @@ body {
     width: 60px;
     display: inline-block;
     padding: 1em .8em; }
-
-.services {
-  margin: 6em auto; }
-  .services p {
-    color: rgba(0, 0, 0, 0.5); }
-  .services h3 {
-    font-size: 2em;
-    font-weight: bold; }
-
-#bottomProfilePicture {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 6em 0 0 0;
-  z-index: 3; }
-
-.well {
-  background-image: none;
-  background-color: transparent;
-  border: none; }
-
-.help-block {
-  color: red; }
-
-.myContact {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white;
-  line-height: 2em; }
-  .myContact h1 {
-    font-size: 3em; }
-
-input#email.form-control, textarea#message.form-control, input#name.form-control {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black; }
 
 /* -----------MY STATUS BUTTON _______________*/
 .btn {
@@ -371,6 +339,10 @@ div.second {
   font-weight: bold;
   padding-bottom: .8em; }
 
+.school-small-text {
+  font-size: .8em;
+  margin-top: 0; }
+
 .school-title {
   color: white; }
   .school-title h4 {
@@ -399,6 +371,8 @@ div.second {
 
   .professional-section h1 {
     color: black; }
+  .professional-section .smallPic {
+    padding-bottom: 1em; }
 
   #professional-background {
     display: none; }
@@ -426,52 +400,81 @@ div.second {
   .schoolIn {
     margin-top: 3em;
     padding: 3em 0; } }
-/* */
-@media (min-width: 150px) and (max-width: 991px) {
-  #professionalBackground img {
-    width: 100%;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
-    margin-bottom: 2em; }
+.services {
+  margin: 13em auto 8em auto; }
+  .services p {
+    color: rgba(0, 0, 0, 0.5); }
+  .services h3 {
+    font-size: 2em;
+    font-weight: bold; }
+  .services h4 {
+    font-weight: bold;
+    padding-bottom: 1em; }
 
-  canvas {
-    background-image: url(../img/smallColorBack.jpg);
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    display: block; } }
-@media (min-width: 150px) and (max-width: 767px) {
-  .pull-right {
-    float: none !important; } }
-@media (min-width: 150px) and (max-width: 360px) {
-  #about {
-    background: none;
-    padding: 0; }
-
+@media (max-width: 767px) {
   .services {
-    margin: 3em auto; }
-    .services hr {
-      margin-top: 0px;
-      margin-bottom: 0px; }
+    margin-top: 0; }
     .services h4 {
-      margin-top: 1em; }
+      padding: 1em 0 .2em 0; } }
+@media (min-width: 768px) {
+  .services {
+    margin-top: 0; }
+    .services h4 {
+      padding: 1em 0 .2em 0; } }
+@media (min-width: 992px) {
+  .services {
+    margin: 1em auto 8em auto; }
+    .services p {
+      color: rgba(0, 0, 0, 0.5); }
+    .services h3 {
+      font-size: 2em;
+      font-weight: bold; }
+    .services h4 {
+      font-weight: bold;
+      padding-bottom: 1em; } }
+@media (min-width: 1200px) {
+  .services {
+    margin: 13em auto 8em auto; }
+    .services p {
+      color: rgba(0, 0, 0, 0.5); }
+    .services h3 {
+      font-size: 2em;
+      font-weight: bold; }
+    .services h4 {
+      font-weight: bold;
+      padding-bottom: 1em; } }
+#contact-me {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 4em 0 0 0;
+  z-index: 3; }
 
-  #blank {
-    text-align: center; } }
-/* 360x640 */
-@media (min-width: 360px) and (max-width: 640px) {
-  #about {
-    background-size: 1850px; } }
+.well {
+  background-image: none;
+  background-color: transparent;
+  border: none; }
+
+.help-block {
+  color: red; }
+
+.contact-information {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding-bottom: 1em; }
+  .contact-information h1 {
+    font-size: 2.5em;
+    padding-bottom: .2em; }
+  .contact-information p {
+    line-height: 1.2; }
+
+input#email.form-control,
+textarea#message.form-control,
+input#name.form-control {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black; }
+
+/* */
 @media (min-width: 640px) and (max-width: 750px) {
   #intro h1, #intro h3 {
     text-align: center; } }
-/* 640x1200 */
-@media (min-width: 640px) and (max-width: 1200px) {
-  #about {
-    background-size: 1800px; } }
-/* 1200x 1600 */
-@media (min-width: 1200px) and (max-width: 1600px) {
-  #about {
-    background-size: 1700px; } }
 
 /*# sourceMappingURL=main.css.map */

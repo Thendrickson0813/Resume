@@ -1,82 +1,11 @@
 /* */
 
-@media (min-width: 150px) and (max-width: 991px) {
-    #professionalBackground img {
-        width: 100%;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
-        margin-bottom: 2em;
-    }
-    canvas {
-        background-image: url(../img/smallColorBack.jpg);
-        margin: 0px auto;
-        width: 100%;
-        position: relative;
-        background-size: cover;
-        display: block;
-    }
-}
 
-@media (min-width: 150px) and (max-width: 767px) {
-    .pull-right {
-        float: none !important;
-    }
-}
-
-@media (min-width: 150px) and (max-width: 360px) {
-    #about {
-        background: none;
-        padding: 0;
-    }
-    .services {
-        margin: 3em auto;
-        hr {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        h4 {
-            margin-top: 1em;
-        }
-    }
-    #blank {
-        text-align: center;
-    }
-}
-/* 360x640 */
-
-@media (min-width: 360px) and (max-width: 640px) {
-    #about {
-        background-size: 1850px;
-    }
-}
 
 @media (min-width: 640px) and (max-width: 750px) {
     #intro {
         h1, h3 {
             text-align: center;
         }
-    }
-}
-/* 640x1200 */
-
-@media (min-width: 640px) and (max-width: 1200px) {
-    // #bottomProfilePicture {
-    //     background: url("../img/smallBack.jpg") no-repeat fixed;
-    //     height: 5%;
-    //     margin: 0px auto;
-    //     width: 100%;
-    //     position: relative;
-    //     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    //     background-size: 1800px;
-    // }
-    #about {
-        background-size: 1800px;
-    }
-}
-/* 1200x 1600 */
-
-
-@media (min-width: 1200px) and (max-width: 1600px) {
-    #about {
-        background-size: 1700px;
     }
 }

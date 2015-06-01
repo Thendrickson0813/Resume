@@ -1,5 +1,4 @@
 // Professional Profile section
-
 //
 //
 // Background Image
@@ -12,6 +11,7 @@
     z-index: -1;
     border-bottom: .1em solid black;
 }
+
 //
 //
 //Name and Photo // Left Hand Side Large Sreen
@@ -26,11 +26,11 @@
     p {
         font-size: .8em;
     }
-} 
+}
+
 //
 //
 //Professional Profile 
-
 .professional-profile {
     p {
         color: $pFont;
@@ -41,6 +41,11 @@
         padding-bottom: .8em;
     }
 }
+.school-small-text {
+    font-size: .8em;
+    margin-top: 0;
+}
+
 //
 //
 // Title white on left side lg
@@ -50,6 +55,7 @@
         font-size: .8em;
     }
 }
+
 .school-description {
     color: $pFont;
 }
@@ -87,29 +93,35 @@
         h1 {
             color: black;
         }
+        .smallPic {
+        padding-bottom: 1em;
     }
+    }
+
     #professional-background {
         display: none;
     }
     .profile-name {
-    color: black;
-    img {
-        margin: 1em 0 1em 0;
+        color: black;
+        img {
+            margin: 1em 0 1em 0;
+        }
+        h1 {
+            font-size: 1.4em;
+        }
+        p {
+            font-size: .6em;
+        }
     }
-    h1 {
-        font-size: 1.4em;
-    }
-    p {
-        font-size: .6em;
-    }
-} 
 }
 
 //
 //
 // 
 // Mediam
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    
+}
 
 // 
 // 
