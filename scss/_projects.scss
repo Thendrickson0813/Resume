@@ -1,0 +1,74 @@
+.projects {
+    padding: 3em 0 7em 0;
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+.project-one {
+    background: url(../img/project-one.jpg);
+    height: 15em;
+    width: 100%;
+    background-size: cover !important;
+    position: relative;
+    color: white;
+    margin: 2em 0;
+    
+}
+#project-one-hover:hover {
+	background: hsla(225, 96%, 42%, .5);
+	padding: 0;
+	margin: 0;
+	height: 15em;
+    width: 100%;
+}
+.project-one-padding {
+	padding: 2em 1em;
+}
+.project-two {
+    background-color: rgba(0, 0, 0, .9);
+    height: 15em;
+    width: 100%;
+    background-size: cover !important;
+    position: relative;
+    color: white;
+    margin: 2em 0;
+    padding: 2em 1em;
+}
+
+.project-three {
+    background-color: rgba(0, 0, 0, .9);
+    height: 15em;
+    width: 100%;
+    background-size: cover !important;
+    position: relative;
+    color: white;
+    margin: 2em 0;
+    padding: 2em 1em;
+}
+
+
+@media(max-width:767px) {
+    .project-one, .project-two, .project-three {
+        height: 10em
+    }
+}
+
+@media(min-width:768px) {
+    .project-one, .project-two, .project-three {
+        height: 10em
+    }
+}
+
+@media(min-width:992px) {
+	.project-one, .project-two, .project-three {
+        height: 15em
+    }
+}
+
+@media(min-width:1200px) {
+	.project-one, .project-two, .project-three {
+        height: 15em
+    }
+}

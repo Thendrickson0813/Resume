@@ -70,13 +70,12 @@
 }
 
 .professional-section {
+    padding: 9.8em 0;
     .smallPic {
         padding-top: 1em;
         width: 100%;
     }
-    .profile {
-        margin: 8em auto 6em auto;
-    }
+    
 }
 
 // Media Queries
@@ -86,6 +85,9 @@
 //
 //Small
 @media(max-width:767px) {
+    .professional-section {
+        padding: 3em 0;
+    }
     .professional-shade-fixed {
         display: none;
     }
@@ -142,6 +144,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+    .professional-section {
+        padding: 6.5em 0 2.3em 0;
+    }
     .school {
         display: none;
     }

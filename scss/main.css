@@ -306,6 +306,9 @@ div.second {
   padding: 4em 0;
   background-color: rgba(0, 0, 0, 0.9);
   color: white; }
+  .status a:hover {
+    color: white;
+    text-decoration: none; }
   .status h4 {
     font-size: 2em; }
 
@@ -359,13 +362,16 @@ div.second {
   position: absolute;
   z-index: 0; }
 
-.professional-section .smallPic {
-  padding-top: 1em;
-  width: 100%; }
-.professional-section .profile {
-  margin: 8em auto 6em auto; }
+.professional-section {
+  padding: 9.8em 0; }
+  .professional-section .smallPic {
+    padding-top: 1em;
+    width: 100%; }
 
 @media (max-width: 767px) {
+  .professional-section {
+    padding: 3em 0; }
+
   .professional-shade-fixed {
     display: none; }
 
@@ -389,6 +395,9 @@ div.second {
   display: none; }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .professional-section {
+    padding: 6.5em 0 2.3em 0; }
+
   .school {
     display: none; }
 
@@ -401,7 +410,7 @@ div.second {
     margin-top: 3em;
     padding: 3em 0; } }
 .services {
-  margin: 13em auto 8em auto; }
+  padding: 5em 0; }
   .services p {
     color: rgba(0, 0, 0, 0.5); }
   .services h3 {
@@ -422,27 +431,23 @@ div.second {
     .services h4 {
       padding: 1em 0 .2em 0; } }
 @media (min-width: 992px) {
-  .services {
-    margin: 1em auto 8em auto; }
-    .services p {
-      color: rgba(0, 0, 0, 0.5); }
-    .services h3 {
-      font-size: 2em;
-      font-weight: bold; }
-    .services h4 {
-      font-weight: bold;
-      padding-bottom: 1em; } }
+  .services p {
+    color: rgba(0, 0, 0, 0.5); }
+  .services h3 {
+    font-size: 2em;
+    font-weight: bold; }
+  .services h4 {
+    font-weight: bold;
+    padding-bottom: 1em; } }
 @media (min-width: 1200px) {
-  .services {
-    margin: 13em auto 8em auto; }
-    .services p {
-      color: rgba(0, 0, 0, 0.5); }
-    .services h3 {
-      font-size: 2em;
-      font-weight: bold; }
-    .services h4 {
-      font-weight: bold;
-      padding-bottom: 1em; } }
+  .services p {
+    color: rgba(0, 0, 0, 0.5); }
+  .services h3 {
+    font-size: 2em;
+    font-weight: bold; }
+  .services h4 {
+    font-weight: bold;
+    padding-bottom: 1em; } }
 #contact-me {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 4em 0 0 0;
@@ -472,6 +477,63 @@ input#name.form-control {
   background-color: rgba(255, 255, 255, 0.8);
   color: black; }
 
+.projects {
+  padding: 3em 0 7em 0; }
+  .projects h1 {
+    font-size: 2em;
+    font-weight: bold; }
+
+.project-one {
+  background: url(../img/project-one.jpg);
+  height: 15em;
+  width: 100%;
+  background-size: cover !important;
+  position: relative;
+  color: white;
+  margin: 2em 0; }
+
+#project-one-hover:hover {
+  background: rgba(4, 56, 210, 0.5);
+  padding: 0;
+  margin: 0;
+  height: 15em;
+  width: 100%; }
+
+.project-one-padding {
+  padding: 2em 1em; }
+
+.project-two {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 15em;
+  width: 100%;
+  background-size: cover !important;
+  position: relative;
+  color: white;
+  margin: 2em 0;
+  padding: 2em 1em; }
+
+.project-three {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 15em;
+  width: 100%;
+  background-size: cover !important;
+  position: relative;
+  color: white;
+  margin: 2em 0;
+  padding: 2em 1em; }
+
+@media (max-width: 767px) {
+  .project-one, .project-two, .project-three {
+    height: 10em; } }
+@media (min-width: 768px) {
+  .project-one, .project-two, .project-three {
+    height: 10em; } }
+@media (min-width: 992px) {
+  .project-one, .project-two, .project-three {
+    height: 15em; } }
+@media (min-width: 1200px) {
+  .project-one, .project-two, .project-three {
+    height: 15em; } }
 /* */
 @media (min-width: 640px) and (max-width: 750px) {
   #intro h1, #intro h3 {
