@@ -1,12 +1,13 @@
 //SKILLSET Progress Bars
 .skillSet {
-    background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
+    background: url(../img/blueBackground.jpg) 5% 0 no-repeat fixed;
     margin: 0 auto;
     width: 100%;
     position: relative;
     background-size: cover;
     padding: 0;
-    color: white;
+    color: black;
+    font-weight: 900;
     z-index: -1;
     h4 {
         margin: 2em 0;
@@ -24,7 +25,7 @@
     background-size: cover !important;
     text-align: center;
     overflow: hidden;
-    height: 27.55em;
+    height: 25em;
     width: 50%;
     position: absolute;
     z-index: 0;
@@ -37,9 +38,9 @@
     padding-bottom: 4em;
 }
 
-// Progress Bar Crap------------------
+
 .progress-bar {
-    border-right: solid 6px hsla(136, 100%, 25%, 1.0);
+    margin-right: .6em;
 }
 
 .progress {
@@ -52,21 +53,21 @@
 }
 
 .progress-bar-custom {
-    background-color: hsla(250, 100%, 44%, 1.0);
+    background-color: hsla(9, 96%, 0%, 1.0);
+    
 }
 .progress-bar-custom1 {
-    background-color: hsla(352, 100%, 52%, 1.0);
+    background-color: hsla(189, 96%, 100%, 1.0);
 }
 
 // Media Queries
 
 @media(max-width:767px) {
     .shade {
-        height: 41.5em;
+        height: 39.1em;
         opacity: .1;
     }
     .skillSet {
-    background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
     margin: 0 auto;
     width: 100%;
     position: relative;

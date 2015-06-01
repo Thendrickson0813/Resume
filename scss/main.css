@@ -56,17 +56,12 @@ body {
   body a {
     color: white;
     text-decoration: none; }
-  body h4 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: .2em; }
 
 .intro {
   color: white;
-  font-size: 4em;
-  margin-top: 3em;
-  line-height: 1.5;
-  text-align: center; }
+  font-size: 3em;
+  line-height: 1;
+  margin-top: 3em; }
 
 #blank {
   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
@@ -82,41 +77,10 @@ body {
     display: inline-block;
     padding: 1em .8em; }
 
-#professionalBackground {
-  background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
-  margin: 0px auto;
-  width: 100%;
-  position: relative;
-  background-size: cover; }
-  #professionalBackground p {
-    color: rgba(0, 0, 0, 0.6); }
-  #professionalBackground p:first-of-type {
-    padding-bottom: 1em; }
-  #professionalBackground h1 {
-    font-size: 1.7em;
-    font-weight: bold; }
-  #professionalBackground h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-bottom: .5em; }
-  #professionalBackground h3 {
-    font-size: 1.3em;
-    font-weight: bold; }
-  #professionalBackground h4 {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: .5em; }
-  #professionalBackground img {
-    height: 20em;
-    width: 30em;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); }
-  #professionalBackground .profile {
-    margin: 6em auto 6em auto; }
-
 .services {
   margin: 6em auto; }
   .services p {
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(0, 0, 0, 0.5); }
   .services h3 {
     font-size: 2em;
     font-weight: bold; }
@@ -288,7 +252,7 @@ div.first {
   height: 100%; }
 
 div.first {
-  background-image: url(../img/colorBackground.jpg);
+  background-image: url(../img/blur.jpg);
   background-color: black;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -304,13 +268,14 @@ div.second {
   width: 100%; }
 
 .skillSet {
-  background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
+  background: url(../img/blueBackground.jpg) 5% 0 no-repeat fixed;
   margin: 0 auto;
   width: 100%;
   position: relative;
   background-size: cover;
   padding: 0;
-  color: white;
+  color: black;
+  font-weight: 900;
   z-index: -1; }
   .skillSet h4 {
     margin: 2em 0; }
@@ -326,7 +291,7 @@ div.second {
   background-size: cover !important;
   text-align: center;
   overflow: hidden;
-  height: 27.55em;
+  height: 25em;
   width: 50%;
   position: absolute;
   z-index: 0;
@@ -339,7 +304,7 @@ div.second {
   padding-bottom: 4em; }
 
 .progress-bar {
-  border-right: solid 6px #008022; }
+  margin-right: .6em; }
 
 .progress {
   border: 8px solid transparent;
@@ -348,18 +313,17 @@ div.second {
   background-color: transparent; }
 
 .progress-bar-custom {
-  background-color: #2500e0; }
+  background-color: black; }
 
 .progress-bar-custom1 {
-  background-color: #ff0a2b; }
+  background-color: white; }
 
 @media (max-width: 767px) {
   .shade {
-    height: 41.5em;
+    height: 39.1em;
     opacity: .1; }
 
   .skillSet {
-    background: url(../img/green_keyboard.jpg) 5% 0 no-repeat fixed;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -382,6 +346,86 @@ div.second {
     font-size: 1.7em; }
   .status p {
     margin-top: 1em; } }
+#professional-background {
+  background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
+  height: 42em;
+  width: 100%;
+  position: absolute;
+  background-size: cover !important;
+  z-index: -1;
+  border-bottom: .1em solid black; }
+
+.profile-name {
+  color: white; }
+  .profile-name img {
+    margin-top: 1em; }
+  .profile-name h1 {
+    font-size: 1.4em; }
+  .profile-name p {
+    font-size: .8em; }
+
+.professional-profile p {
+  color: rgba(0, 0, 0, 0.5); }
+.professional-profile h2 {
+  font-size: 1.4;
+  font-weight: bold;
+  padding-bottom: .8em; }
+
+.school-title {
+  color: white; }
+  .school-title h4 {
+    font-size: .8em; }
+
+.school-description {
+  color: rgba(0, 0, 0, 0.5); }
+
+.professional-shade-fixed {
+  background: black 5% 0 no-repeat fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 42em;
+  width: 50%;
+  position: absolute;
+  z-index: 0; }
+
+.professional-section .smallPic {
+  padding-top: 1em;
+  width: 100%; }
+.professional-section .profile {
+  margin: 8em auto 6em auto; }
+
+@media (max-width: 767px) {
+  .professional-shade-fixed {
+    display: none; }
+
+  .professional-section h1 {
+    color: black; }
+
+  #professional-background {
+    display: none; }
+
+  .profile-name {
+    color: black; }
+    .profile-name img {
+      margin: 1em 0 1em 0; }
+    .profile-name h1 {
+      font-size: 1.4em; }
+    .profile-name p {
+      font-size: .6em; } }
+.schoolIn {
+  display: none; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .school {
+    display: none; }
+
+  .schoolIn {
+    display: inline-block;
+    border-top: .1em solid black;
+    padding: 1.3em 0; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .schoolIn {
+    margin-top: 3em;
+    padding: 3em 0; } }
 /* */
 @media (min-width: 150px) and (max-width: 991px) {
   #professionalBackground img {

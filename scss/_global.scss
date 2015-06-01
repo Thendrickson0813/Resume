@@ -9,20 +9,14 @@ body {
         color: white;
         text-decoration: none;
     }
-    h4 {
-        font-size: 1.5em;
-        font-weight: bold;
-        margin-bottom: .2em;
-    }
 }
 
 // -------Header -----------
 .intro {
     color: white;
-    font-size: 4em;
+    font-size: 3em;
+    line-height: 1;
     margin-top: 3em;
-    line-height: 1.5;
-    text-align: center;
 }
 
 // Email Phone Location
@@ -44,46 +38,7 @@ body {
     }
 }
 
-// Professional Profile section
-#professionalBackground {
-    background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
-    margin: 0px auto;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    p {
-        color: $pFont;
-    }
-    p:first-of-type {
-        padding-bottom: 1em;
-    }
-    h1 {
-        font-size: 1.7em;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding-bottom: .5em;
-    }
-    h3 {
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-    h4 {
-        font-size: 1.1em;
-        font-weight: bold;
-        margin-bottom: .5em;
-    }
-    img {
-        height: 20em;
-        width: 30em;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-    }
-    .profile {
-        margin: 6em auto 6em auto;
-    }
-}
+
 
 // What I Can Do Section
 // SERVICES

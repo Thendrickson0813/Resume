@@ -1,0 +1,150 @@
+// Professional Profile section
+
+//
+//
+// Background Image
+#professional-background {
+    background: url("http://antaryami.net/darpanam/wp-content/uploads/2013/11/background-site.jpg") 5% 0 no-repeat fixed;
+    height: 42em;
+    width: 100%;
+    position: absolute;
+    background-size: cover !important;
+    z-index: -1;
+    border-bottom: .1em solid black;
+}
+//
+//
+//Name and Photo // Left Hand Side Large Sreen
+.profile-name {
+    color: white;
+    img {
+        margin-top: 1em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: .8em;
+    }
+} 
+//
+//
+//Professional Profile 
+
+.professional-profile {
+    p {
+        color: $pFont;
+    }
+    h2 {
+        font-size: 1.4;
+        font-weight: bold;
+        padding-bottom: .8em;
+    }
+}
+//
+//
+// Title white on left side lg
+.school-title {
+    color: white;
+    h4 {
+        font-size: .8em;
+    }
+}
+.school-description {
+    color: $pFont;
+}
+
+.professional-shade-fixed {
+    background: black 5% 0 no-repeat fixed;
+    background-color: rgba(0, 0, 0, .9);
+    height: 42em;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.professional-section {
+    .smallPic {
+        padding-top: 1em;
+        width: 100%;
+    }
+    .profile {
+        margin: 8em auto 6em auto;
+    }
+}
+
+// Media Queries
+//
+//
+//
+//
+//Small
+@media(max-width:767px) {
+    .professional-shade-fixed {
+        display: none;
+    }
+    .professional-section {
+        h1 {
+            color: black;
+        }
+    }
+    #professional-background {
+        display: none;
+    }
+    .profile-name {
+    color: black;
+    img {
+        margin: 1em 0 1em 0;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: .6em;
+    }
+} 
+}
+
+//
+//
+// 
+// Mediam
+@media(min-width:768px) {}
+
+// 
+// 
+// 
+// 
+//Large
+@media(min-width:992px) {}
+
+// 
+// 
+// 
+// 
+//XL
+@media(min-width:1200px) {}
+
+.schoolIn {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .school {
+        display: none;
+    }
+    .schoolIn {
+        display: inline-block;
+        border-top: .1em solid black;
+        padding: 1.3em 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .schoolIn {
+        margin-top: 3em;
+        padding: 3em 0;
+    }
+}
+
+//End
