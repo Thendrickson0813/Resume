@@ -106,13 +106,6 @@ body {
   position: relative;
   top: 1px; }
 
-.social-links {
-  background-color: black;
-  margin: 0 auto;
-  padding: 1.5em 0; }
-  .social-links img {
-    padding: 0 1em; }
-
 /* Navbar sectio*/
 .navbar {
   background: rgba(80, 113, 89, 0.3);
@@ -193,6 +186,14 @@ body {
   margin-top: 4.4em; }
   .stuckTwo li {
     display: inline-block; }
+
+.social-links {
+  background-color: black;
+  margin: 0 auto;
+  padding: 1.5em 0; }
+  .social-links img {
+    padding: 0 1em;
+    width: 4.5em; }
 
 .scrollTopBtn {
   display: none;
