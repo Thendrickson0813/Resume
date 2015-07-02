@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" <meta name="viewport" content="width=device-width" />
     <meta name="description=" content="Front-End Developer, Tampa Florida, Contact me for more information about building your interactive website.">
     <title>Timothy Hendrickson, Front-End Developer, Tampa Florida</title>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,35 +35,36 @@
 <body>
     <!--  BODY PAGE CONTENT -->
     <!-- navigation panel -->
+    <span itemscope itemtype="http://schema.org/LocalBusiness">
     <div class="navbar navbar-default scroller navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button id="nav-toggle-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Timothy Hendrickson</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a data-scroll href="#home">Home</a>
-                    </li>
-                    <li><a data-scroll href="#about">About</a>
-                    </li>
-                    <li><a data-scroll href="#services">Services</a>
-                    </li>
-                    <li><a data-scroll href="#projects">Projects</a>
-                    </li>
-                    <li><a data-scroll href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><span itemprop="name">Timothy Hendrickson</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a data-scroll href="#home">Home</a>
+            </li>
+            <li><a data-scroll href="#about">About</a>
+            </li>
+            <li><a data-scroll href="#services">Services</a>
+            </li>
+            <li><a data-scroll href="#projects">Projects</a>
+            </li>
+            <li><a data-scroll href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
     </div>
     <!-- first section - Home -->
     <!-- Section 1 -->
@@ -100,11 +103,11 @@
                 <div class="profile-name col-sm-5 col-md-5 col-lg-5 col-xl-6">
                     <h1>Timothy Hendrickson</h1>
                     <p class="white-text">Visual Designer, Front-End Developer.</p>
-                    <img class="smallPic" alt="Profile Picture" src="img/profile2.jpg" />
+                    <img itemprope="image" class="smallPic" alt="Profile Picture" src="img/profile2.jpg" />
                 </div>
                 <div class="professional-profile col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 col-xl-6">
                     <h2>PROFESSIONAL PROFILE</h2>
-                    <p>I have passion for technology and developing user focused web experiences. I enjoy taking on new projects that provide exciting learning opportunities and the chance to challenge what I know about web design. I have experience working solo on projects as well as teams of technical experts and business analysts.</p>
+                    <p>I have passion for technology and developing user focused web experiences. I enjoy taking on new projects that provide exciting learning opportunities and the chance to challenge what I know about web design. I have experience working solo on projects as well as on teams of technical experts and business analysts.</p>
                     <p>I am very interested in working on projects that will allow me to utilize my growing skills in HTML, CSS, and Javascript as a solo campaign or as a member of a talent rich and high velocity team. My favorite frame works to build with are Bootstrap and jQuery and I am always open to taking a swing at the flavor of the month. </p>
                     <br>
                     <!--  -->
@@ -149,7 +152,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-4">
-                    <h4>Resposive design</h4>
+                    <h4>Responsive design</h4>
                     <p>Crafting sites to provide an optimal viewing experience, easy reading and navigation with a minimum of resizing, panning, and scrolling across a wide range of devices</p>
                 </div>
                 <div class="col-md-4">
@@ -182,36 +185,67 @@
     <div class="projects container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-6 col-xl-offset-3 text-center">
+                <div class="projects-header col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-6 col-xl-offset-3 text-center">
                     <div>
-                        <h1>Projects</h1>
+                        <h1>PROJECTS</h1>
                         <p>A showcase of design, development, experiments and more</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-6">
-                    <a href="http://rpg.timothy-hendrickson.com/#/">
-                        <div class="project-one">
-                            <div id="project-one-hover">
-                                <div class="project-one-padding">
-                                    <h1>Angular</h1>
-                                    <p>RPG Game</p>
-                                </div>
+                <div class="col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4 col-xl-6">
+                    <div class="project project-one">
+                        <div class="project-hover">
+                            <div class="project-view">
+                                <h4>Angular Project</h4>
+                                <p>The beginning peice of an RPG game. Designing to be able to walk around worlds freely, fight random roaming monsters and comunicate with players</p>
+                                <div class="view-project"><a href="http://rpg.timothy-hendrickson.com/#/">View Project</a></div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-md-4  col-lg-4 col-xl-6">
-                    <div class="project-two">
-                        <h1>Project</h1>
-                        <p>Coming soon</p>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-5">
+                    <div class="project project-two">
+                        <div class="project-hover">
+                            
+                            <div class="project-view">
+                                <h4>WordPress Blog</h4>
+                                <p>JohnKlapp.com was created by editing a wordpress templete, installing plugins and connecting to social API's. </p>
+                                <div class="view-project"><a href="http://johnklapp.com/">View Project</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6 col-xl-5">
+                    <div class="project project-three">
+                        <div class="project-hover">
+                            <div class="project-one-padding project-hide">
+                                <h1>Project</h1>
+                                <p>Coming soon</p>
+                            </div>
+                            <div class="project-view">
+                                <h4>Coming Soon</h4>
+                                <p>Come back to see my progress as a Developer</p>
+                                <div class="view-project"><a href="">View Project</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-6">
-                    <div class="project-three">
-                        <h1>Project</h1>
-                        <p>Coming soon</p>
+                    <div class="project project-four">
+                        <div class="project-hover">
+                            <div class="project-one-padding project-hide">
+                                <h1>Project</h1>
+                                <p>Coming soon</p>
+                            </div>
+                            <div class="project-view">
+                                <h4>Coming Soon</h4>
+                                <p>Come back to see my progress as a Developer</p>
+                                <div class="view-project"><a href="">View Project</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,12 +358,14 @@
                     <div class="col-md-offset-1 col-md-5">
                         <br/>
                         <br/>
-                        <h1>Contact Me</h1>
-                        <p>For more informatoin contact me. I look forward to hearing from you!</p>
+                        <h1>CONTACT ME</h1>
+                        <p>Please dont hesitate to get in contact. Feel free to leave your phone number or address, so we can get in touch as quickly as possible. I look forward to hearing from you!</p>
                         <br>
-                        <p><span class="glyphicon glyphicon-triangle-right" aria-hidden="true">  Tampa, Florida</span>
+                        <p><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="glyphicon glyphicon-triangle-right" aria-hidden="true">  
+<span itemprop="addressLocality">Tampa</span>,
+                            <span itemprop="addressRegion">Florida</span></span>
                         </p>
-                        <p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true">  813-438-2668</span>
+                        <p><span itemprop="telephone" class="glyphicon glyphicon-phone-alt" aria-hidden="true">  813-438-2668</span>
                         </p>
                         <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true">  support</span>
                         </p>
@@ -366,6 +402,7 @@
             </div>
         </div>
     </section>
+    </span>
     <div class="container-fluid social-links">
         <div class="container">
             <div class="row">

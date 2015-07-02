@@ -1,5 +1,11 @@
 /* general styles */
 
+* {
+    a:hover {
+        text-decoration: none;
+    }
+}
+
 body {
     font-family: 'Cantarell', 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 1.1em;
@@ -36,8 +42,6 @@ body {
         padding: 1em .8em;
     }
 }
-
-
 /* -----------MY STATUS BUTTON _______________*/
 
 .btn {
@@ -70,4 +74,3 @@ body {
     position: relative;
     top: 1px;
 }
-

@@ -48,6 +48,9 @@ table {
   border-spacing: 0; }
 
 /* general styles */
+* a:hover {
+  text-decoration: none; }
+
 body {
   font-family: 'Cantarell', 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 1.1em;
@@ -467,10 +470,13 @@ div.second {
   color: white;
   padding-bottom: 1em; }
   .contact-information h1 {
-    font-size: 2.5em;
+    font-weight: bold;
+    font-size: 2em;
     padding-bottom: .2em; }
   .contact-information p {
-    line-height: 1.2; }
+    font-size: .8em;
+    line-height: 1.2;
+    font-weight: 100; }
 
 input#email.form-control,
 textarea#message.form-control,
@@ -484,57 +490,107 @@ input#name.form-control {
     font-size: 2em;
     font-weight: bold; }
 
-.project-one {
-  background: url(../img/project-one.jpg);
-  height: 15em;
+.projects-header {
+  padding-bottom: 2em; }
+
+.project {
   width: 100%;
   background-size: cover !important;
   position: relative;
   color: white;
-  margin: 2em 0; }
+  margin: .75em 0;
+  transition: visibility 0s linear 0.5s, opacity 1.5s linear; }
 
-#project-one-hover:hover {
-  background: rgba(4, 56, 210, 0.5);
-  padding: 0;
-  margin: 0;
-  height: 15em;
-  width: 100%; }
+.project-one {
+  background: url(../img/rpg.jpg); }
+
+.project-two {
+  background: url(../img/logoPicture.jpg); }
+
+.project-three {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.project-four {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.project-hover {
+  width: 100%;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, #fb2327 50%);
+  transition: background-position 2s; }
+  .project-hover .project-view {
+    visibility: hidden;
+    opacity: 9;
+    padding: 1em 2em;
+    font-size: .7em;
+    text-align: center; }
+    .project-hover .project-view h4 {
+      font-size: 1.5em;
+      padding: .5em 0; }
+    .project-hover .project-view .view-project {
+      border: .045em solid white;
+      width: 7em;
+      padding: .1em .2em 0;
+      margin: .7em auto; }
+      .project-hover .project-view .view-project :hover {
+        color: white; }
+  .project-hover .view-project:hover {
+    background-color: #d7040f; }
+  .project-hover:hover {
+    background-position: 0 -100%;
+    border: .035em solid black;
+    vertical-align: middle; }
+    .project-hover:hover .project-hide {
+      display: none; }
+  .project-hover:hover {
+    background-position: 0 -100%;
+    border: .035em solid black;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .project-hover:hover .project-view {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 1.2s; }
 
 .project-one-padding {
   padding: 2em 1em; }
 
-.project-two {
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 15em;
-  width: 100%;
-  background-size: cover !important;
-  position: relative;
-  color: white;
-  margin: 2em 0;
-  padding: 2em 1em; }
-
-.project-three {
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 15em;
-  width: 100%;
-  background-size: cover !important;
-  position: relative;
-  color: white;
-  margin: 2em 0;
-  padding: 2em 1em; }
-
 @media (max-width: 767px) {
-  .project-one, .project-two, .project-three {
+  .project-hover, .project-one, .project-two, .project-three {
     height: 10em; } }
 @media (min-width: 768px) {
-  .project-one, .project-two, .project-three {
-    height: 10em; } }
+  .project-hover, .project-one, .project-two, .project-three {
+    height: 10em; }
+
+  .project-hover .project-view {
+    font-size: .6em;
+    line-height: 1.2; }
+    .project-hover .project-view h1 {
+      font-size: 1em; }
+    .project-hover .project-view .view-project {
+      border: .045em solid white;
+      width: 7em;
+      padding: .2em .2em;
+      margin: .7em auto; } }
 @media (min-width: 992px) {
-  .project-one, .project-two, .project-three {
-    height: 15em; } }
+  .project-hover, .project-one, .project-two, .project-three {
+    height: 12em; }
+
+  .project-hover .project-view {
+    font-size: .8em;
+    line-height: 1.2; }
+    .project-hover .project-view h1 {
+      font-size: 1em; }
+    .project-hover .project-view .view-project {
+      border: .045em solid white;
+      width: 7em;
+      padding: .2em .2em;
+      margin: .7em auto; } }
 @media (min-width: 1200px) {
-  .project-one, .project-two, .project-three {
-    height: 15em; } }
+  .project-hover, .project-one, .project-two, .project-three {
+    height: 12em; } }
 /* */
 @media (min-width: 640px) and (max-width: 750px) {
   #intro h1, #intro h3 {
