@@ -1,3 +1,16 @@
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
+}
+
 .projects {
     padding: 3em 0 7em 0;
     h1 {
@@ -16,6 +29,9 @@
     position: relative;
     color: white;
     margin: .75em 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: visibility 0s linear 0.5s, opacity 1.5s linear;
     transition: visibility 0s linear 0.5s, opacity 1.5s linear;
 }
 
@@ -40,13 +56,18 @@
 //     padding: 0;
 // }
 .project-hover {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     width: 100%;
     background-size: 100% 200%;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .1)50%, hsla(359, 96%, 56%, 1.0)50%);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1)50%, hsla(359, 96%, 56%, 1.0)50%);
+    -webkit-transition: background-position 2s;
     transition: background-position 2s;
     .project-view {
         visibility: hidden;
         opacity: 9;
+        filter: alpha(opacity=900);
         padding: 1em 2em;
         font-size: .7em;
         text-align: center;
@@ -59,15 +80,17 @@
             width: 7em;
             padding: .1em .2em 0;
             margin: .7em auto;
-            :hover {
+            :hover, :focus {
                 color: white;
             }
         }
     }
-    .view-project:hover {
+    .view-project:hover,
+    .view-project:focus {
         background-color: hsla(357, 96%, 43%, 1.0);
     }
-    &:hover {
+    &:hover,
+    &:focus {
         background-position: 0 -100%;
         border: .035em solid black;
         vertical-align: middle;
@@ -75,16 +98,29 @@
             display: none;
         }
     }
-    &:hover {
+    &:hover,
+    &:focus,    {
         background-position: 0 -100%;
         border: .035em solid black;
         vertical-align: middle;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
         .project-view {
             visibility: visible;
             opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transition-delay: 1.2s;
             transition-delay: 1.2s;
         }
     }
@@ -97,6 +133,12 @@
 @media(max-width:767px) {
     .project-hover, .project-one, .project-two, .project-three {
         height: 10em;
+    }
+    body {
+        cursor: pointer
+    }
+    .projects {
+        cursor: pointer
     }
 }
 
