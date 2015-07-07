@@ -507,8 +507,6 @@ body {
   position: relative;
   color: white;
   margin: .75em 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   -webkit-transition: visibility 0s linear 0.5s, opacity 1.5s linear;
   transition: visibility 0s linear 0.5s, opacity 1.5s linear; }
 
@@ -525,8 +523,6 @@ body {
   background-color: rgba(0, 0, 0, 0.9); }
 
 .project-hover {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   width: 100%;
   background-size: 100% 200%;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 50%, #fb2327 50%);
@@ -544,15 +540,17 @@ body {
       font-size: 1.5em;
       padding: .5em 0; }
     .project-hover .project-view .view-project {
-      border: .045em solid white;
       width: 7em;
-      padding: .1em .2em 0;
-      margin: .7em auto; }
-      .project-hover .project-view .view-project :hover, .project-hover .project-view .view-project :focus {
-        color: white; }
-  .project-hover .view-project:hover,
-  .project-hover .view-project:focus {
-    background-color: #d7040f; }
+      margin: .7em auto;
+      padding: .1em .1em; }
+      .project-hover .project-view .view-project a {
+        padding: .05em .05em;
+        border: .15em solid white; }
+      .project-hover .project-view .view-project :hover,
+      .project-hover .project-view .view-project :focus {
+        color: white;
+        padding: 0;
+        background-color: #d7040f; }
   .project-hover:hover, .project-hover:focus {
     background-position: 0 -100%;
     border: .035em solid black;
@@ -603,12 +601,7 @@ body {
     font-size: .6em;
     line-height: 1.2; }
     .project-hover .project-view h1 {
-      font-size: 1em; }
-    .project-hover .project-view .view-project {
-      border: .045em solid white;
-      width: 7em;
-      padding: .2em .2em;
-      margin: .7em auto; } }
+      font-size: 1em; } }
 @media (min-width: 992px) {
   .project-hover, .project-one, .project-two, .project-three {
     height: 12em; }
@@ -617,12 +610,7 @@ body {
     font-size: .8em;
     line-height: 1.2; }
     .project-hover .project-view h1 {
-      font-size: 1em; }
-    .project-hover .project-view .view-project {
-      border: .045em solid white;
-      width: 7em;
-      padding: .2em .2em;
-      margin: .7em auto; } }
+      font-size: 1em; } }
 @media (min-width: 1200px) {
   .project-hover, .project-one, .project-two, .project-three {
     height: 12em; } }

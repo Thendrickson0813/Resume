@@ -29,8 +29,6 @@ body {
     position: relative;
     color: white;
     margin: .75em 0;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
     -webkit-transition: visibility 0s linear 0.5s, opacity 1.5s linear;
     transition: visibility 0s linear 0.5s, opacity 1.5s linear;
 }
@@ -56,8 +54,6 @@ body {
 //     padding: 0;
 // }
 .project-hover {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
     width: 100%;
     background-size: 100% 200%;
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .1)50%, hsla(359, 96%, 56%, 1.0)50%);
@@ -76,19 +72,22 @@ body {
             padding: .5em 0;
         }
         .view-project {
-            border: .045em solid white;
             width: 7em;
-            padding: .1em .2em 0;
             margin: .7em auto;
-            :hover, :focus {
+            padding: .1em .1em;
+            a {
+                padding: .05em .05em;
+                border: .15em solid white;
+            }
+            :hover,
+            :focus {
                 color: white;
+                padding: 0;
+                background-color: hsla(357, 96%, 43%, 1.0);
             }
         }
     }
-    .view-project:hover,
-    .view-project:focus {
-        background-color: hsla(357, 96%, 43%, 1.0);
-    }
+    
     &:hover,
     &:focus {
         background-position: 0 -100%;
@@ -99,7 +98,7 @@ body {
         }
     }
     &:hover,
-    &:focus,    {
+    &:focus {
         background-position: 0 -100%;
         border: .035em solid black;
         vertical-align: middle;
@@ -153,12 +152,6 @@ body {
             h1 {
                 font-size: 1em;
             }
-            .view-project {
-                border: .045em solid white;
-                width: 7em;
-                padding: .2em .2em;
-                margin: .7em auto;
-            }
         }
     }
 }
@@ -173,12 +166,6 @@ body {
             line-height: 1.2;
             h1 {
                 font-size: 1em;
-            }
-            .view-project {
-                border: .045em solid white;
-                width: 7em;
-                padding: .2em .2em;
-                margin: .7em auto;
             }
         }
     }
